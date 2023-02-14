@@ -25,11 +25,11 @@ export default {
     256256: ''
   },
   tokenFactory: {
-    512512: '',
+    512512: '0xc9ff4de14774ed1d1572a106062595205f5cc313',
     256256: ''
   },
   tokenSimpleFactory: {
-    512512: '',
+    512512: '0x8187c63b66d17e492b85f449885422eaaf2bc67d',
     256256: ''
   },
   tokenFactoryManager: {
@@ -37,11 +37,11 @@ export default {
     256256: ''
   },
   launchpadSaleFactory: {
-    512512: '0x6F08E57ED232177fF6CD23669826234daEeb4835',
+    512512: '0xC7F119F6d3ddA5f599629d3cCBEa2d62E0C39cE3',
     256256: ''
   },
   locker: {
-    512512: '',
+    512512: '0x3baf95ebbb425a84136ab8e07b24f14d04cb5d43',
     256256: ''
   },
   lotteryV2: {

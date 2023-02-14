@@ -13,12 +13,12 @@ export const useCreateSale = () => {
       const gasPrice = getGasPrice()
       const args = [[rate, rateDecimals, listingRate, listingRateDecimals, liqudityPercent, wallet, ROUTER_ADDRESS, token, baseToken, goal, cap, minContribution, maxContribution, openingTime, closingTime, unlockTime, whitelistEnabled], logo];
       const tx = await callWithEstimateGas(factory, 'createSale', args, { gasPrice}, 1000, feeAmount)
-      const receipt = await tx.wait()
+      const receipt = await tx.wait(1)
       if (receipt.status === 1) {
         /* eslint-disable dot-notation */
         const ev = Array.from(receipt["events"]).filter((v) =>  {
           return v["event"] === "NewSaleCreated"
-        }); 
+        });
 
         if (ev.length > 0) {
           const resArgs = ev[0]["args"];

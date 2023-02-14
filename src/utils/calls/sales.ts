@@ -10,7 +10,7 @@ export const buySale = async (manager, amount) => {
 
   let limit: BigNumber = new BigNumber(0)
   // const contract = getErc20Contract(tokens.pcrow.address)
-  const contract = getErc20Contract(tokens.cake.address)
+  const contract = getBep20Contract(tokens.cake.address)
   try {
     const res = await contract.balanceOf(manager.address)
     limit = new BigNumber(res.toString())
